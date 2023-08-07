@@ -1,0 +1,11 @@
+1.Valid Command:
+node main.js  rock Spock paper lizard scissors exit help
+
+2.Repeated Parameters:
+node main.js rock rock paper
+
+3. Even Number of Parameters:
+node main.js rock paper
+
+4. No Parameter
+node main.js
