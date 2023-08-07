@@ -33,14 +33,10 @@ class UserInterface {
       } else {
         const computerMove = this.gameRules.getRandomMove();
         const winner = this.gameRules.determineWinner(userMove, computerMove);
-        
-        const userHMAC = this.hmacGenerator.calculateHMAC(userMove);
-      
+              
         console.log(`Your move: ${userMove}`);
         console.log(`Computer move: ${computerMove}`);
-        console.log(
-          `${winner === "Draw" ? "It's a draw!" : `${winner} wins!`}`
-        );
+        console.log(`${winner === "Draw" ? "It's a draw!" : `${winner} wins!`}`);
         console.log(`HMAC key: ${this.hmac}`);
 
         this.rl.close();

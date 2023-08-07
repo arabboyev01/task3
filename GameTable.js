@@ -1,5 +1,3 @@
-// GameTable.js
-
 class GameTable {
   constructor(moves) {
     this.moves = moves;
@@ -9,7 +7,6 @@ class GameTable {
   generateTable() {
     const numRows = this.moves.length + 1;
     const numCols = this.moves.length + 1;
-
     const table = new Array(numRows).fill(null).map(() => new Array(numCols));
 
     for (let i = 0; i < this.moves.length; i++) {
