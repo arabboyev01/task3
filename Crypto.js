@@ -2,7 +2,7 @@ const crypto = require("crypto");
 
 class Crypto {
   generateKey() {
-    return crypto.randomBytes(32); // 256 bits
+    return crypto.randomBytes(32);
   }
 
   calculateHMAC(key, message) {

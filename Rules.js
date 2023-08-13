@@ -5,8 +5,6 @@ class Rules {
 
   determineWinner(playerMove, computerMove) {
     const playerIndex = this.choices.indexOf(playerMove);
-    // const computerIndex = this.choices.indexOf(computerMove);
-
     const movesInCircle = this.choices
       .slice(playerIndex + 1)
       .concat(this.choices.slice(0, playerIndex));
@@ -21,5 +19,6 @@ class Rules {
     }
   }
 }
+
 
 module.exports = Rules;

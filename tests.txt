@@ -1,0 +1,15 @@
+1 Valid test cases:
+  node main.js rock Spock paper lizard scissors exit help
+
+2. Repeated Parameter:
+  node main.js rock paper rock
+
+3. Even Number of Parameters:
+  node main.js rock paper scissors
+
+4.One Parameter:
+  node main.js rock
+
+5. No Parameters:
+  node main.js
+
